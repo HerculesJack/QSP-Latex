@@ -266,7 +266,7 @@ and
 
 \[H = \sum_\alpha \hbar\omega_\alpha(a^\dagger_\alpha a_\alpha + \frac{1}{2}) \]
 
-The eigenstates of $H$ are described by a set of non-negative integers defined fro each decoupled mode. 
+The eigenstates of $H$ are described by a set of non-negative integers defined for each decoupled mode. 
 
 \[H|n_1,n_2,\cdots\rangle = \sum_\alpha \hbar\omega_\alpha(n_\alpha+\frac{1}{2})|n_1,n_2\cdots\rangle \]
 
@@ -326,7 +326,7 @@ The corresponding equation of motion is
 0 = \frac{\partial}{\partial t}\frac{\delta L}{\delta \dot{\varphi}(x)} - \frac{\delta\dot{L}}{\delta \varphi(x)} = \ddot{\varphi}(x)+\int d^2 x' K(x-x')\varphi(x')
 \end{equation}
 
-When the interaction between fields is spatially local like this
+When the interaction between fields is spatially locally like this
 
 \[K(x-x') = -c^2\Delta^2\delta(x-x'), \]
 
@@ -338,7 +338,7 @@ the equation of motion becomes the usual wave equation
 
 \ 
 
-If we regard that $\varphi(x)$ is a coordinate variable for each $x$, the conjugate momentu to $\varphi$ is
+If we regard that $\varphi(x)$ is a coordinate variable for each $x$, the conjugate momentum to $\varphi$ is
 
 \[\Pi(x) = \frac{\delta L}{\delta \dot{\varphi}(x)} = \dot{\varphi}(x) \]
 
@@ -396,12 +396,12 @@ Since $K(x) = K(-x)$, $\omega(k)$ is real and even function in $k$.
 
 \[\omega^*(k) = \omega(k) = \omega(-k) \]
 
-Let uis again assume that $\omega(k)$ are non-negative for all $k$, so that we replace this by $\omega^2(k)$. 
+Let us again assume that $\omega(k)$ are non-negative for all $k$, so that we replace this by $\omega^2(k)$. 
 
 Rewriting the Hamiltonian in terms of these fields and functions, we obtain
 
 \begin{align}
-H = \frac{1}{2}\int\frac{d^2 k}{(2\pi)^2}\left[\tilde{\Pi}(-k)\tilde(k)+\omega^2(k)\tilde{\varphi}(-k)\tilde{\varphi}(k)\right] = \frac{1}{2}\int\frac{d^2 k}{(2\pi)^2}\left[\tilde{\Pi}^\dagger (k)\tilde(k)+\omega^2(k)\tilde{\varphi}^\dagger(k)\tilde{\varphi}(k)\right]
+H = \frac{1}{2}\int\frac{d^2 k}{(2\pi)^2}\left[\tilde{\Pi}(-k)\tilde{\Pi}(k)+\omega^2(k)\tilde{\varphi}(-k)\tilde{\varphi}(k)\right] = \frac{1}{2}\int\frac{d^2 k}{(2\pi)^2}\left[\tilde{\Pi}^\dagger (k)\tilde{\Pi}(k)+\omega^2(k)\tilde{\varphi}^\dagger(k)\tilde{\varphi}(k)\right]
 \end{align}
 
 We next define annihilation and creation operators as follows, 
@@ -523,7 +523,7 @@ A $n$-particle state is given by a simple product of one-particle states
 
 \[|\psi\rangle = |\psi_1\rangle|\psi_2\rangle\cdots|\psi_n\rangle \]
 
-You can also weite this in the coordinate representation as 
+You can also write this in the coordinate representation as 
 
 \[\psi(x_1,\cdots,x_n) = \psi_1(x_1)\psi_2(x_2)\cdots\psi_n(x_n) \]
 
@@ -556,9 +556,7 @@ P(1) & P(2) & \cdots & P(n)
 \end{matrix}
 \right) \]
 
-into $\{P(1),P(2),\cdots P(n)\}$
-
-we take the sum over all possible permutations here. 
+into $\{P(1),P(2),\cdots P(n)\}$. We take the sum over all possible permutations here. 
 
 The total number of possible permutations among $n$ distinguishable objects are given by a factorial of $n$. To normalize this many-particle wavefunction, I put $1$ over the square root of the factorial of $n$. We can see that the exchange between the $j$-th particle coordinate and the $m$-th particle coordinate does not change this many-particle wavefunction. 
 
@@ -590,11 +588,11 @@ Because of this symmetrized property, $n$-particles in this wavefunction are ind
 
 An indistinguishable particle in a symmetrized many-particle wavefunction is called as ``boson''. 
 
-The other way of making wavefunctions for indistinguishable particles is ``antesymmetrize'' the wavefunction for distinguishable particles. %page41
+The other way of making wavefunctions for indistinguishable particles is ``antisymmetrize'' the wavefunction for distinguishable particles. %page41
 
 \[\Psi_F(x_1,\cdots,x_n) = \frac{1}{\sqrt{n!}}\sum_P(-1)^P\psi_{P(1)}(x_1)\cdot\psi_{P(2)}(x_2)\cdot\cdots\cdot\psi_{P(n)}(x_n) \]
 
-Here $P$ us again in a permutation among $n$-particles, but, at this time, we have $(-1)^P$ ($(-1)$ to the power of $P$). This factor takes $+1$, if the permutation $P$ is given by a product of even-number of transpositions, where a transposition is an exchange between a pair of two particle. 
+Here $P$ is again a permutation among $n$-particles, but, at this time, we have $(-1)^P$ ($(-1)$ to the power of $P$). This factor takes $+1$, if the permutation $P$ is given by a product of even-number of transpositions, where a transposition is an exchange between a pair of two particle. 
 
 For example, 
 
@@ -611,7 +609,7 @@ For example,
 \end{matrix}\right)
 \]
 
-\[((1,2,3)\rightarrow(2,1,3)\rightarrow(2,3,1) \]
+\[ (1,2,3)\rightarrow(2,1,3)\rightarrow(2,3,1) \]
 
 this permutation is given by a product of two transpositions, so that
 
@@ -653,11 +651,11 @@ Under a permutation among $n$ particles, this many-body wavefunction is unchange
 &=\frac{1}{\sqrt{n!}}\sum_P(-1)^P\psi_{P(1)}(x_{Q(1)})\cdot\cdots\cdot\psi_{P(n)}(x_{Q(n)})\\
 &=\frac{1}{\sqrt{n!}}\sum_P(-1)^P\psi_{P\cdot Q^{-1}(1)}(x_1)\cdot\cdots\cdot\psi_{P\cdot Q^{-1}(n)}(x_n)\\
 &\quad\quad P\cdot Q^{-1}=1\\
-&=(-1)^Q\frac{1}{\sqrt{n!}}\sum_{P'}(-1)^{P'}]psi_{P'(1)}(x_1)\cdot\cdots\cdot\psi_{P'(n)}(x_n)\\
+&=(-1)^Q\frac{1}{\sqrt{n!}}\sum_{P'}(-1)^{P'}\psi_{P'(1)}(x_1)\cdot\cdots\cdot\psi_{P'(n)}(x_n)\\
 &=(-1)^Q\psi_F(x_1,\cdots,x_n)
 \end{split}\]
 
-Because of this, asymmetrized property, $n$-particle in the wavefunction are essentially indistinguishable from one another. 
+Because of this, asymmetrized property, $n$-particles in the wavefunction are essentially indistinguishable from one another. 
 
 An indistinguishable particle in an antisymmetrized many-particle wavefunction is called as ``fermion''. 
 
@@ -750,15 +748,15 @@ Using this, one can show that a complete orthonormal set of $n$-particle states 
 \begin{align}\begin{cases}
 \displaystyle\frac{|\alpha_1,\alpha_2,\cdots,\alpha_n\rangle}{\sqrt{n_1!n_2!\cdots}} \quad (\alpha_1\le\cdots\le\alpha_n) \ \text{for boson}\\
 \ \\
-|\alpha_1,\alpha_2,\cdots\alpha_n\rangle \quad (\alpha_1<\alpha_2<\cdots<\alpha_n)\ \text(for fermion)
+|\alpha_1,\alpha_2,\cdots\alpha_n\rangle \quad (\alpha_1<\alpha_2<\cdots<\alpha_n)\ \text{for fermion}
 \end{cases}\end{align}
 
 where $n_j$ denotes the number of times that $j$ occurs in the sequence of $\alpha_1,\cdots,\alpha_n$. 
 
-For either boson case or fermion case, the completeness relation in the $n$-particles space can be weitten in the following simple form. 
+For either boson case or fermion case, the completeness relation in the $n$-particles space can be written in the following simple form. 
 
 \begin{align}
-\frac{1}{n!}\sum_{\alpha_1}\cdots\sum_{\alpha_n}|\alpha_1,\cdots,\alpha_n\rangle\langle\alpha)_1,\cdots,\alpha_n| = 1
+\frac{1}{n!}\sum_{\alpha_1}\cdots\sum_{\alpha_n}|\alpha_1,\cdots,\alpha_n\rangle\langle\alpha_1,\cdots,\alpha_n| = 1
 \end{align}
 
 where the sum of each $\alpha_j$ is taken over all single-particle states. 
@@ -767,7 +765,7 @@ The duplication of $n$-particle states are set off by the $1/n!$ (one over the f
 
 To see that this equality holds true for both boson and fermion cases, let us apply the left side to a $n$-particle state $|\beta_1,\cdots,\beta_n\rangle$ where $|\beta_j\rangle$ is from $\{|1\rangle,|2\rangle,\cdots,\}$ the single-particle states considered. \\
 
-{\Huge 1. }When all these $\beta_j$ are distict from one another, 
+{\Huge 1. }When all these $\beta_j$ are distinct from one another, 
 
 \[\begin{split}
 &\frac{1}{n!}\sum_{\alpha_1}\cdots\sum_{\alpha_n}|\alpha_1,\cdots,\alpha_n\rangle\langle\alpha_1,\cdots,\alpha_n|\beta_1,\cdots,\beta_n\rangle\\
@@ -842,7 +840,7 @@ The completeness relation in the multiparticle is given as follows,
 
 \section{Creation operator \& destruction operator}
 
-So far, we have constructed a complete orthonormal set of states in the multiparticle space. With these constructions in hand, we are now ready to define creation and destruction operators. These operators change the number of particles, so that they connect states of different numbers of particles. We will see that allthe physical operators are expressed in terms of creation and destruction operators. 
+So far, we have constructed a complete orthonormal set of states in the multiparticle space. With these constructions in hand, we are now ready to define creation and destruction operators. These operators change the number of particles, so that they connect states of different numbers of particles. We will see that all the physical operators are expressed in terms of creation and destruction operators. 
 
 Let $|\varphi\rangle$ be any one-particle state. We define $a^\dagger$ of $\varphi$ to be that linear operator which satisfies this, for any n-particle states $|\psi_1, \cdots,\psi_n\rangle$. 
 
@@ -857,7 +855,7 @@ For $n=0$, this simply means that
 
 We call $a^\dagger(\varphi)$ as the creation operator for the state $|\varphi\rangle$, and its hermitian conjugate $a(\varphi)$ as the destruction or annihilation operator. 
 
-A destruction operator converts an $n$-particle states into a $(n-1)$-particle states. 
+A destruction operator converts an $n$-particle states into an $(n-1)$-particle states. 
 
 To find the effect of $a(\varphi)$ on an $n$-particle state $|\psi_1,\psi_2,\cdots,\psi_n\rangle$, we multiply on the left by an arbitrary $(n-1)$-particle state, which is this
 
@@ -889,11 +887,11 @@ Since this relation holds true for any arbitrary $x_1$ and so on, we finally hav
 
 We can derive 
 
-\[a^\dagger(\varphi_1)a^\dagger(\varphi_2) = \xi a^\dagger(\varphi_2)a^\dagger(\varphi) \]
+\[a^\dagger(\varphi_1)a^\dagger(\varphi_2) = \xi a^\dagger(\varphi_2)a^\dagger(\varphi_1) \]
 
 Namely, the following relations holds true for arbitrary $\psi_1,\cdots,\psi_n$
 
-\[a^\dagger(\varphi_1)a^\dagger(\varphi_2)|\psi_1,\cdots,\psi_n\rangle = \xi a^\dagger(\varphi_2)a^\dagger(\varphi) |\psi_1,\cdots,\psi_n\rangle\]
+\[a^\dagger(\varphi_1)a^\dagger(\varphi_2)|\psi_1,\cdots,\psi_n\rangle = \xi a^\dagger(\varphi_2)a^\dagger(\varphi_1) |\psi_1,\cdots,\psi_n\rangle\]
 
 This leads to the commutation relations for boson and fermion. 
 
@@ -947,7 +945,7 @@ These three relations are the fundamental ``commutation relations'' for creation
 [a(\alpha),a^\dagger(\beta)]_{-\xi} = \langle\alpha|\beta\rangle = \delta_{\alpha\beta}
 \end{align}
 
-Where one-particle states $|\alpha\rangle$ and $|\beta\rangle$ are from a complete orthonormal set of one-particle states, $\{|1\rangle,|2\rangle,\cdots\}$
+Where one-particle states $|\alpha\rangle$ and $|\beta\rangle$ are from a complete orthonormal set of one-particle states, $\{|1\rangle,|2\rangle,\cdots\}$.
 
 Let us next compare these commutation relations with raising and lowering operators for linear harmonic osciallators. 
 
